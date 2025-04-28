@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KSF 꽃송이 스마트팜</title>
+  <style>
+    body { font-family: 'Noto Sans KR', sans-serif; margin: 0; padding: 0; }
+    header { background: #65A30D; padding: 20px; color: white; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    nav { display: flex; flex-wrap: wrap; justify-content: center; }
+    nav a { color: white; margin: 10px 15px; text-decoration: none; font-weight: bold; font-size: 1rem; }
+    .hero { background: url('images/main-banner.jpg') center/cover no-repeat; height: 70vh; display: flex; justify-content: center; align-items: center; color: white; font-size: 2em; text-shadow: 1px 1px 2px black; text-align: center; padding: 20px; }
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    section h2 { color: #65A30D; margin-bottom: 20px; text-align: center; font-size: 2em; }
+    .products, .system, .startup { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: #F7F5E6; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center; }
+    footer { background: #333; color: white; text-align: center; padding: 20px; font-size: 0.9em; }
+    button { background: #FFC107; border: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; cursor: pointer; }
+    button:hover { background: #e6ac06; }
+    form { display: flex; flex-direction: column; align-items: center; }
+    input, textarea { width: 90%; max-width: 500px; margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
+
+    @media (max-width: 768px) {
+      header { flex-direction: column; align-items: center; }
+      nav { flex-direction: column; width: 100%; }
+      nav a { margin: 10px 0; font-size: 1.2rem; }
+      .hero { height: 50vh; font-size: 1.5em; padding: 10px; }
+      section { padding: 40px 15px; }
+      section h2 { font-size: 1.5em; }
+      button { width: 80%; }
+      input, textarea { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>KSF</div>
+    <nav>
+      <a href="#about">소개</a>
+      <a href="#products">제품</a>
+      <a href="#system">스마트팜 시스템</a>
+      <a href="#startup">귀농 창업안내</a>
+      <a href="#news">뉴스</a>
+      <a href="#contact">문의하기</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    미래를 키우는 스마트 농장, KSF
+  </section>
+
+  <section id="about">
+    <h2>소개</h2>
+    <p>KSF는 자연과 기술을 결합하여 미래형 꽃송이버섯 재배를 실현합니다. 최첨단 IoT 기술과 자동화 시스템을 통해 누구나 쉽게 스마트팜을 운영할 수 있습니다.</p>
+  </section>
+
+  <section id="products">
+    <h2>제품</h2>
+    <div class="products">
+      <div class="card">프리미엄 꽃송이버섯</div>
+      <div class="card">스마트 재배 키트</div>
+      <div class="card">정기배송 서비스</div>
+    </div>
+  </section>
+
+  <section id="system">
+    <h2>스마트팜 시스템</h2>
+    <div class="system">
+      <div class="card">자동 온습도 제어</div>
+      <div class="card">원격 모니터링</div>
+      <div class="card">에너지 효율 시스템</div>
+    </div>
+  </section>
+
+  <section id="startup">
+    <h2>귀농 창업안내</h2>
+    <div class="startup">
+      <div class="card">
+        <h3>컨테이너 스마트팜 창업</h3>
+        <p>40피트 컨테이너 기반으로 저비용 고효율 귀농이 가능합니다.</p>
+        <button>창업 상담 신청하기</button>
+      </div>
+      <div class="card">
+        <h3>예상 수익 모델</h3>
+        <p>월 예상 매출, 수익성 분석표 제공!</p>
+        <button>안내서 다운로드</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="news">
+    <h2>뉴스 & 공지사항</h2>
+    <p>KSF의 최신 소식과 농업 트렌드를 만나보세요.</p>
+  </section>
+
+  <section id="contact">
+    <h2>문의하기</h2>
+    <form>
+      <input type="text" placeholder="이름" required>
+      <input type="email" placeholder="이메일" required>
+      <textarea placeholder="문의내용" rows="5" required></textarea>
+      <button type="submit">보내기</button>
+    </form>
+  </section>
+
+  <footer>
+    미래 꽃송이 스마트팜 | 사업자등록번호: 123-45-67890 | 주소: 경기도 고양시 미래로 123 | SNS: Instagram / YouTube
+  </footer>
+</body>
+</html>
